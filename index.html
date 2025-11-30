@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1>Weather App</h1>
+
+        <form id="search-form" aria-label="Search city">
+        <input id="city-input" type="text" placeholder="Enter City Name(Exampel: Algiers)" required />
+        <button type="submit" id="search-btn">search</button>
+        </form>
+
+        <div id="message" role="status" aria-live="polite"></div>
+
+        <section id="weather" class="weather hidden" aria-hidden="true">
+        <div class="city" id="city-name"></div>
+        <div class="temp" id="temp"></div>
+        <div class="desc" id="description"></div>
+        <img id="icon" class="icon" src="" alt="" />
+        <div class="meta" id="meta"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
